@@ -16,5 +16,11 @@ namespace CondoFrame
         {
             InitializeComponent();
         }
+
+        private void agendarReservasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReserva newfuncao4 = new frmReserva();
+            newfuncao4.ShowDialog();
+        }
     }
 }

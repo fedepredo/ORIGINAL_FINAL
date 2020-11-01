@@ -45,14 +45,14 @@ namespace CondoFrame
                 dgv_sindico.Columns[2].HeaderText = "iniciomandato";
                 dgv_sindico.Columns[3].HeaderText = "fimmandato";
                 dgv_sindico.Columns[4].HeaderText = "dataeleicao";
-                
+
 
                 dgv_sindico.Columns[0].Width = 15;
                 dgv_sindico.Columns[1].Width = 150;
                 dgv_sindico.Columns[2].Width = 100;
                 dgv_sindico.Columns[3].Width = 100;
                 dgv_sindico.Columns[4].Width = 100;
-                
+
 
                 dgv_sindico.RowsDefaultCellStyle.BackColor = Color.Bisque;
                 dgv_sindico.AlternatingRowsDefaultCellStyle.BackColor = Color.Beige;
@@ -196,6 +196,48 @@ namespace CondoFrame
             else
                 bs_sindico.MovePrevious();
             igualar_text();
+        }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            _query = "Select * from sindico where CPF like '" + mskCPF.Text + "%'";
+            OleDbCommand _dataCommand = new OleDbCommand(_query, conn);
+            dr_sindico = _dataCommand.ExecuteReader();
+
+            if (dr_sindico.HasRows == true)
+            {
+                bs_sindico.DataSource = dr_sindico;
+            }
+            else
+            {
+                MessageBox.Show("Não temos Síndicos cadastrados com este CPF !!!!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPesquisa.Text = "";
+            }
+        }
+
+        private void btnAlt_Click(object sender, EventArgs e)
+        {
+            bool teste;
+            teste = valida();
+            if (teste == false)
+            {
+                _query = "Update sindico set CPF ='" + mskCPF.Text + "',";
+                _query += "iniciomandato = '" + dtpInicio.Text + "',";
+                _query += "fimmandato = '" + dtpFim.Text + "',";
+                _query += "dataeleicao = '" + dtpEleicao.Text + "' ";
+                _query += "where Cod_Sindico like '" + lblCodSin.Text + "' ";
+                try
+                {
+                    OleDbCommand _dataCommand = new OleDbCommand(_query, conn);
+                    _dataCommand.ExecuteNonQuery();
+                    carregar_grid();
+                    MessageBox.Show("Alterado com sucesso !!!!", "Alteração", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Problemas com a Alteração  !!!!", "Alteração", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

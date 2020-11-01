@@ -47,6 +47,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnProx = new System.Windows.Forms.Button();
             this.btnAnt = new System.Windows.Forms.Button();
+            this.btnAlt = new System.Windows.Forms.Button();
+            this.lblpesquisa = new System.Windows.Forms.Label();
+            this.txtPesquisa = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sindico)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -119,10 +122,10 @@
             // 
             this.dgv_sindico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_sindico.Location = new System.Drawing.Point(299, 37);
-            this.dgv_sindico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_sindico.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_sindico.Name = "dgv_sindico";
             this.dgv_sindico.RowHeadersWidth = 51;
-            this.dgv_sindico.Size = new System.Drawing.Size(488, 252);
+            this.dgv_sindico.Size = new System.Drawing.Size(535, 304);
             this.dgv_sindico.TabIndex = 6;
             this.dgv_sindico.Click += new System.EventHandler(this.dgv_sindico_Click);
             this.dgv_sindico.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dgv_sindico_KeyUp);
@@ -156,14 +159,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAlt);
             this.groupBox1.Controls.Add(this.btnNovoRegistro);
             this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.btnIncluir);
-            this.groupBox1.Location = new System.Drawing.Point(32, 334);
+            this.groupBox1.Location = new System.Drawing.Point(15, 391);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(417, 78);
+            this.groupBox1.Size = new System.Drawing.Size(529, 78);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ações";
@@ -171,7 +175,7 @@
             // btnNovoRegistro
             // 
             this.btnNovoRegistro.Location = new System.Drawing.Point(7, 22);
-            this.btnNovoRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovoRegistro.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovoRegistro.Name = "btnNovoRegistro";
             this.btnNovoRegistro.Size = new System.Drawing.Size(124, 38);
             this.btnNovoRegistro.TabIndex = 14;
@@ -181,8 +185,8 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(268, 22);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Location = new System.Drawing.Point(397, 22);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(125, 38);
             this.btnExcluir.TabIndex = 13;
@@ -193,7 +197,7 @@
             // btnIncluir
             // 
             this.btnIncluir.Location = new System.Drawing.Point(139, 22);
-            this.btnIncluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIncluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnIncluir.Name = "btnIncluir";
             this.btnIncluir.Size = new System.Drawing.Size(121, 38);
             this.btnIncluir.TabIndex = 16;
@@ -205,7 +209,7 @@
             // 
             this.groupBox2.Controls.Add(this.btnProx);
             this.groupBox2.Controls.Add(this.btnAnt);
-            this.groupBox2.Location = new System.Drawing.Point(503, 334);
+            this.groupBox2.Location = new System.Drawing.Point(550, 391);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -217,7 +221,7 @@
             // btnProx
             // 
             this.btnProx.Location = new System.Drawing.Point(5, 22);
-            this.btnProx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProx.Margin = new System.Windows.Forms.Padding(4);
             this.btnProx.Name = "btnProx";
             this.btnProx.Size = new System.Drawing.Size(125, 38);
             this.btnProx.TabIndex = 15;
@@ -228,7 +232,7 @@
             // btnAnt
             // 
             this.btnAnt.Location = new System.Drawing.Point(152, 22);
-            this.btnAnt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnt.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnt.Name = "btnAnt";
             this.btnAnt.Size = new System.Drawing.Size(125, 38);
             this.btnAnt.TabIndex = 17;
@@ -236,11 +240,42 @@
             this.btnAnt.UseVisualStyleBackColor = true;
             this.btnAnt.Click += new System.EventHandler(this.btnAnt_Click);
             // 
+            // btnAlt
+            // 
+            this.btnAlt.Location = new System.Drawing.Point(268, 22);
+            this.btnAlt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAlt.Name = "btnAlt";
+            this.btnAlt.Size = new System.Drawing.Size(125, 38);
+            this.btnAlt.TabIndex = 17;
+            this.btnAlt.Text = "Alterar Registro";
+            this.btnAlt.UseVisualStyleBackColor = true;
+            this.btnAlt.Click += new System.EventHandler(this.btnAlt_Click);
+            // 
+            // lblpesquisa
+            // 
+            this.lblpesquisa.AutoSize = true;
+            this.lblpesquisa.Location = new System.Drawing.Point(296, 357);
+            this.lblpesquisa.Name = "lblpesquisa";
+            this.lblpesquisa.Size = new System.Drawing.Size(130, 17);
+            this.lblpesquisa.TabIndex = 28;
+            this.lblpesquisa.Text = "Pesquisar por CPF:";
+            // 
+            // txtPesquisa
+            // 
+            this.txtPesquisa.Location = new System.Drawing.Point(433, 357);
+            this.txtPesquisa.Mask = "000\\.000\\.000-00";
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(123, 22);
+            this.txtPesquisa.TabIndex = 29;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
+            // 
             // frmSindico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 431);
+            this.ClientSize = new System.Drawing.Size(847, 492);
+            this.Controls.Add(this.txtPesquisa);
+            this.Controls.Add(this.lblpesquisa);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtpEleicao);
@@ -287,5 +322,8 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnProx;
         private System.Windows.Forms.Button btnAnt;
+        private System.Windows.Forms.Button btnAlt;
+        private System.Windows.Forms.Label lblpesquisa;
+        private System.Windows.Forms.MaskedTextBox txtPesquisa;
     }
 }
