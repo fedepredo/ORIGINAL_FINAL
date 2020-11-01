@@ -45,7 +45,7 @@ namespace CondoFrame
                 dgv_condomino.Columns[6].HeaderText = "datasaída";
                 dgv_condomino.Columns[7].HeaderText = "status";
 
-                dgv_condomino.Columns[0].Width = 15;
+                dgv_condomino.Columns[0].Width = 90;
                 dgv_condomino.Columns[1].Width = 150;
                 dgv_condomino.Columns[2].Width = 100;
                 dgv_condomino.Columns[3].Width = 100;
@@ -170,9 +170,9 @@ namespace CondoFrame
                     carregar_grid();
                     MessageBox.Show("Incluido com sucesso !!!!", "Inclusão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show("Problemas com a Inclusão  !!!!\n" + _query, "Inclusão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Problemas com a Inclusão  !!!!", "Inclusão", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -187,9 +187,9 @@ namespace CondoFrame
                 carregar_grid();
                 MessageBox.Show("Excluido com sucesso !!!!", "Exclusão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Problemas com a Exclusão  !!!!\n" + _query, "Exclusão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Problemas com a Exclusão  !!!!", "Exclusão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
        
@@ -215,6 +215,56 @@ namespace CondoFrame
             else
                 bs_condomino.MovePrevious();
             igualar_text();
+        }
+
+        private void btnAlt_Click(object sender, EventArgs e)
+        {
+            bool teste;
+            teste = valida();
+            if (teste == false)
+            {
+                _query = "Update condomino set Nome ='" + txtNomeCond.Text + "',";
+                _query += "Num_Apt = '" + mskNumApt.Text + "',";
+                _query += "Telefone = '" + mskTel.Text + "',";
+                _query += "email = '" + mskEmailCond.Text + "',";
+                _query += "dataentrada = '" + dtpentrada.Text + "',";
+                _query += "datasaída = '" + dtpsaida.Text + "',";
+                _query += "status = '" + txtStatus.Text + "' ";
+                _query += "where CPF like '" + mskCPF.Text + "' ";
+                try
+                {
+                    OleDbCommand _dataCommand = new OleDbCommand(_query, conn);
+                    _dataCommand.ExecuteNonQuery();
+                    carregar_grid();
+                    MessageBox.Show("Alterado com sucesso !!!!", "Alteração", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Problemas com a Alteração  !!!!" , "Alteração", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            _query = "Select * from condomino where CPF like '" + mskCPF.Text + "%'";
+            OleDbCommand _dataCommand = new OleDbCommand(_query, conn);
+            dr_condomino = _dataCommand.ExecuteReader();
+
+            if (dr_condomino.HasRows == true)
+            {
+                bs_condomino.DataSource = dr_condomino;
+            }
+            else
+            {
+                MessageBox.Show("Não temos Condôminos cadastrados com este CPF !!!!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPesquisa.Text = "";
+            }
+        }
+
+        private void txtPesquisa_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }

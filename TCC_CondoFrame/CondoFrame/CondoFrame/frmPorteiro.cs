@@ -196,5 +196,48 @@ namespace CondoFrame
                 bs_porteiro.MovePrevious();
             igualar_text();
         }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            _query = "Select * from porteiro where CPF like '" + mtxtCPFPort.Text + "%'";
+            OleDbCommand _dataCommand = new OleDbCommand(_query, conn);
+            dr_porteiro = _dataCommand.ExecuteReader();
+
+            if (dr_porteiro.HasRows == true)
+            {
+                bs_porteiro.DataSource = dr_porteiro;
+            }
+            else
+            {
+                MessageBox.Show("Não temos Porteiros cadastrados com este CPF !!!!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPesquisa.Text = "";
+            }
+        }
+
+        private void btnAlt_Click(object sender, EventArgs e)
+        {
+            bool teste;
+            teste = valida();
+            if (teste == false)
+            {
+                _query = "Update porteiro set cpf ='" + mtxtCPFPort.Text + "',";
+                _query += "nome = '" + txtNamePort.Text + "',";
+                _query += "rg = '" + mtxtRGPort.Text + "',";
+                _query += "dataadmissao = '" + dtpaddPORT.Text + "',";
+                _query += "datademisao = '" + dtpdemPORT.Text + "' ";
+                _query += "where codporteiro like '" + lblCodPort.Text + "' ";
+                try
+                {
+                    OleDbCommand _dataCommand = new OleDbCommand(_query, conn);
+                    _dataCommand.ExecuteNonQuery();
+                    carregar_grid();
+                    MessageBox.Show("Alterado com sucesso !!!!", "Alteração", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Problemas com a Alteração  !!!!", "Alteração", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

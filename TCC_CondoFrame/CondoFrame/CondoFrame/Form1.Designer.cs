@@ -38,14 +38,22 @@
             this.cadastrarCondôminoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarSindicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarPorterioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
+=======
             this.cadernoDigitalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.correspondênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> ea9dfa99ed9a3de9778f28a678b40eb63b4d4ba0
             this.reclamaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+<<<<<<< HEAD
+            this.cadernoDigitalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.correspondênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
             this.avisosEComunicadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> ea9dfa99ed9a3de9778f28a678b40eb63b4d4ba0
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,6 +94,7 @@
             this.cadastrosToolStripMenuItem,
             this.avisosEComunicadosToolStripMenuItem,
             this.cadernoDigitalToolStripMenuItem,
+            this.correspondênciaToolStripMenuItem,
             this.reclamaçõesToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -126,6 +135,8 @@
             this.cadastrarPorterioToolStripMenuItem.Text = "Cadastrar Porterio";
             this.cadastrarPorterioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarPorterioToolStripMenuItem_Click);
             // 
+<<<<<<< HEAD
+=======
             // cadernoDigitalToolStripMenuItem
             // 
             this.cadernoDigitalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -141,6 +152,7 @@
             this.correspondênciaToolStripMenuItem.Text = "E-mail";
             this.correspondênciaToolStripMenuItem.Click += new System.EventHandler(this.correspondênciaToolStripMenuItem_Click);
             // 
+>>>>>>> ea9dfa99ed9a3de9778f28a678b40eb63b4d4ba0
             // reclamaçõesToolStripMenuItem
             // 
             this.reclamaçõesToolStripMenuItem.Name = "reclamaçõesToolStripMenuItem";
@@ -171,6 +183,21 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Form1_Load);
             // 
+<<<<<<< HEAD
+            // cadernoDigitalToolStripMenuItem
+            // 
+            this.cadernoDigitalToolStripMenuItem.Name = "cadernoDigitalToolStripMenuItem";
+            this.cadernoDigitalToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
+            this.cadernoDigitalToolStripMenuItem.Text = "Caderno Digital";
+            this.cadernoDigitalToolStripMenuItem.Click += new System.EventHandler(this.cadernoDigitalToolStripMenuItem_Click);
+            // 
+            // correspondênciaToolStripMenuItem
+            // 
+            this.correspondênciaToolStripMenuItem.Name = "correspondênciaToolStripMenuItem";
+            this.correspondênciaToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
+            this.correspondênciaToolStripMenuItem.Text = "Correspondência";
+            this.correspondênciaToolStripMenuItem.Click += new System.EventHandler(this.correspondênciaToolStripMenuItem_Click_1);
+=======
             // avisosEComunicadosToolStripMenuItem
             // 
             this.avisosEComunicadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -184,6 +211,7 @@
             this.reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
             this.reservasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reservasToolStripMenuItem.Text = "Reservas";
+>>>>>>> ea9dfa99ed9a3de9778f28a678b40eb63b4d4ba0
             // 
             // Form1
             // 
@@ -196,7 +224,11 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+<<<<<<< HEAD
+            this.MaximizeBox = false;
+=======
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> ea9dfa99ed9a3de9778f28a678b40eb63b4d4ba0
             this.Name = "Form1";
             this.Text = "CondoFrame";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -219,15 +251,23 @@
         private System.Windows.Forms.ToolStripMenuItem cadastrarCondôminoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarSindicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarPorterioToolStripMenuItem;
+<<<<<<< HEAD
+=======
         private System.Windows.Forms.ToolStripMenuItem cadernoDigitalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem correspondênciaToolStripMenuItem;
+>>>>>>> ea9dfa99ed9a3de9778f28a678b40eb63b4d4ba0
         private System.Windows.Forms.ToolStripMenuItem reclamaçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel lblHora;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+<<<<<<< HEAD
+        private System.Windows.Forms.ToolStripMenuItem cadernoDigitalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem correspondênciaToolStripMenuItem;
+=======
         private System.Windows.Forms.ToolStripMenuItem avisosEComunicadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem;
+>>>>>>> ea9dfa99ed9a3de9778f28a678b40eb63b4d4ba0
     }
 }
 

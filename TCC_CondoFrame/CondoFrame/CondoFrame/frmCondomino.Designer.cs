@@ -53,6 +53,9 @@
             this.btnIncluir = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAlt = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPesquisa = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_condomino)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -213,7 +216,7 @@
             // 
             this.groupBox2.Controls.Add(this.btnProx);
             this.groupBox2.Controls.Add(this.btnAnt);
-            this.groupBox2.Location = new System.Drawing.Point(564, 500);
+            this.groupBox2.Location = new System.Drawing.Point(564, 530);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -268,7 +271,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(268, 22);
+            this.btnExcluir.Location = new System.Drawing.Point(403, 22);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(125, 38);
@@ -279,23 +282,55 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAlt);
             this.groupBox1.Controls.Add(this.btnNovoRegistro);
             this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.btnIncluir);
-            this.groupBox1.Location = new System.Drawing.Point(36, 500);
+            this.groupBox1.Location = new System.Drawing.Point(22, 530);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(417, 78);
+            this.groupBox1.Size = new System.Drawing.Size(536, 66);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ações";
+            // 
+            // btnAlt
+            // 
+            this.btnAlt.Location = new System.Drawing.Point(266, 22);
+            this.btnAlt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAlt.Name = "btnAlt";
+            this.btnAlt.Size = new System.Drawing.Size(129, 38);
+            this.btnAlt.TabIndex = 17;
+            this.btnAlt.Text = "Alterar Registro";
+            this.btnAlt.UseVisualStyleBackColor = true;
+            this.btnAlt.Click += new System.EventHandler(this.btnAlt_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(339, 480);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 17);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Pesquisar por CPF:";
+            // 
+            // txtPesquisa
+            // 
+            this.txtPesquisa.Location = new System.Drawing.Point(475, 477);
+            this.txtPesquisa.Mask = "000\\.000\\.000-00";
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(138, 22);
+            this.txtPesquisa.TabIndex = 27;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // frmCondomino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 622);
+            this.Controls.Add(this.txtPesquisa);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtpsaida);
@@ -354,5 +389,8 @@
         private System.Windows.Forms.Button btnIncluir;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnAlt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox txtPesquisa;
     }
 }

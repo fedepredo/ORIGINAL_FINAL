@@ -66,6 +66,25 @@ D:\PEDRO\TCC\Projeto_TCC\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFra
 D:\PEDRO\TCC\Projeto_TCC\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.pdb
 C:\Users\Ponto  Frio\Desktop\PEDRO\TCC\AULAS\Projeto_TCC\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmAgenda.resources
 D:\PEDRO\TCC\Projeto_TCC\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmAgenda.resources
+<<<<<<< HEAD
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\bin\Debug\CondoFrame.exe.config
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\bin\Debug\CondoFrame.exe
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\bin\Debug\CondoFrame.pdb
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.csprojAssemblyReference.cache
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.Form1.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmComunicado.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmCondomino.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmCorrespondencia.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmPorteiro.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmAgenda.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmReserva.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.frmSindico.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.Properties.Resources.resources
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.csproj.GenerateResource.cache
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.csproj.CoreCompileInputs.cache
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.exe
+D:\PEDRO\TCC_FINAL\ORIGINAL_FINAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.pdb
+=======
 C:\Users\Ponto  Frio\Desktop\PEDRO\TCC\ORIGINAL_FIANAL\TCC_CondoFrame\CondoFrame\CondoFrame\bin\Debug\CondoFrame.exe.config
 C:\Users\Ponto  Frio\Desktop\PEDRO\TCC\ORIGINAL_FIANAL\TCC_CondoFrame\CondoFrame\CondoFrame\bin\Debug\CondoFrame.exe
 C:\Users\Ponto  Frio\Desktop\PEDRO\TCC\ORIGINAL_FIANAL\TCC_CondoFrame\CondoFrame\CondoFrame\bin\Debug\CondoFrame.pdb
@@ -83,3 +102,4 @@ C:\Users\Ponto  Frio\Desktop\PEDRO\TCC\ORIGINAL_FIANAL\TCC_CondoFrame\CondoFrame
 C:\Users\Ponto  Frio\Desktop\PEDRO\TCC\ORIGINAL_FIANAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.csproj.CoreCompileInputs.cache
 C:\Users\Ponto  Frio\Desktop\PEDRO\TCC\ORIGINAL_FIANAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.exe
 C:\Users\Ponto  Frio\Desktop\PEDRO\TCC\ORIGINAL_FIANAL\TCC_CondoFrame\CondoFrame\CondoFrame\obj\Debug\CondoFrame.pdb
+>>>>>>> ea9dfa99ed9a3de9778f28a678b40eb63b4d4ba0

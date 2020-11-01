@@ -45,20 +45,17 @@ namespace CondoFrame
 
         private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmReserva newfuncao4 = new frmReserva();
-            newfuncao4.ShowDialog();
+            
         }
 
         private void correspondênciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCorrespondencia newfuncao5= new frmCorrespondencia();
-            newfuncao5.ShowDialog();
+            
         }
 
         private void reclamaçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAgenda newfuncao6 = new frmAgenda();
-            newfuncao6.ShowDialog();
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -78,5 +75,16 @@ namespace CondoFrame
             }
         }
 
+        private void cadernoDigitalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAgenda newfuncao6 = new frmAgenda();
+            newfuncao6.ShowDialog();
+        }
+
+        private void correspondênciaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmCorrespondencia newfuncao5 = new frmCorrespondencia();
+            newfuncao5.ShowDialog();
+        }
     }
 }
